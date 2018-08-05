@@ -34,7 +34,11 @@ class ProcessAString {
 	 * character. Letters are all character from a to z and from A to Z.
 	 */
 	public void characterOnTheEvenPositions(String str) {
-
+		String s=str.replaceAll("\\s", ""); 
+		for (int i = 1; i < s.length(); i++) {
+			System.out.print(s.charAt(i));
+			i++;
+		}
 	}
 
 	/*
